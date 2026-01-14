@@ -1,9 +1,9 @@
 import React from 'react'
 
-const pokemonForm = () => {
+const PokemonForm = () => {
   return (
-    <div>pokemonForm</div>
+    <div>PokemonForm</div>
   )
 }
 
-export default pokemonForm
+export default PokemonForm

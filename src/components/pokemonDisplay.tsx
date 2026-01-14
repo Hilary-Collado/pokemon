@@ -1,9 +1,17 @@
 import React from 'react'
 
-const pokemonDisplay = () => {
+const PokemonDisplay = () => {
   return (
-    <div>pokemonDisplay</div>
-  )
-} 
+    <div className='card'>
+      <div className="card-header">
+        <h1>helen</h1>
+      </div>
 
-export default pokemonDisplay
+      <div className="card-body">
+        <img src='' alt="pokemon" />
+      </div>
+    </div>
+  )
+}
+
+export default PokemonDisplay
