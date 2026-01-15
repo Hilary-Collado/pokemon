@@ -1,17 +1,34 @@
-import React from 'react'
+import React from "react";
 
 const PokemonDisplay = () => {
+       
+  const showAnswer = false;
+  const image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+  const name = "Ditto";
   return (
-    <div className='card'>
+    <div className="card">
       <div className="card-header">
-        <h1>helen</h1>
+        <h1 className="text-center">
+          {
+            showAnswer ? name.toUpperCase(): "Who's that Pokémon?"
+          }
+        </h1>
       </div>
 
       <div className="card-body">
-        <img src='' alt="pokemon" />
+        <img
+          src={image}
+          alt="pokemon"
+          className="img-fluid mx-auto d-block"
+          style={{
+            maxHeight: "300px",
+            filter: showAnswer ? "none" : "brightness(0)",
+            transition: "filter 0.3s ease-in-out"
+          }}
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PokemonDisplay
+export default PokemonDisplay;
